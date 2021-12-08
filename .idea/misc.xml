@@ -3,6 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Bolil/AndroidStudioProjects/Quiz/app/src/main/res/layout/activity_add_question_db.xml" value="0.264" />
+        <entry key="..\:/Users/Bolil/AndroidStudioProjects/Quiz/app/src/main/res/layout/activity_admin_login.xml" value="0.2418478260869565" />
         <entry key="..\:/Users/Bolil/AndroidStudioProjects/Quiz/app/src/main/res/layout/activity_display_message.xml" value="0.2" />
         <entry key="..\:/Users/Bolil/AndroidStudioProjects/Quiz/app/src/main/res/layout/activity_easy_quiz.xml" value="0.2" />
         <entry key="..\:/Users/Bolil/AndroidStudioProjects/Quiz/app/src/main/res/layout/activity_easyquiz2.xml" value="0.176" />

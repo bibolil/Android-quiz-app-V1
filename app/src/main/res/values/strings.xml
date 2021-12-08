@@ -7,6 +7,8 @@
     <string name="hard">Hard</string>
     <string name="medium">Medium</string>
     <string name="let_s_play">Let\'s play</string>
+    <string name="adminspace">Admin space</string>
+
     <string name="hey_wanna_play_a_game_what_s_your_name">Hey wanna play a game ? What\'s your name?</string>
     <string name="is_that_is_that_a_supraaa">IS THAT ? IS THAT A SUPRAAA !?</string>
     <string name="todo">TODO</string>
@@ -21,4 +23,13 @@
 
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="title_activity_admin_login">AdminLoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
 </resources>

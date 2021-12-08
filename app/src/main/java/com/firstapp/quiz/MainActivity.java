@@ -62,7 +62,11 @@ public class MainActivity extends AppCompatActivity {
         intent.putExtra(EXTRA_MESSAGE, message);
         startActivity(intent);
     }
-
+    public void startadminspace(View view)
+    {
+        Intent intent2 = new Intent(this,AddQuestionDB.class);
+        startActivity(intent2);
+    }
 
 
 }

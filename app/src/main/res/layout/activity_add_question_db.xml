@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AddQuestionDB">
+
+
+    <EditText
+        android:id="@+id/idquestion"
+        android:layout_width="match_parent"
+        android:layout_height="101dp"
+        android:layout_margin="10dp"
+        android:hint="Enter question"
+        />
+
+
+    <EditText
+        android:id="@+id/idquestionoption1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="option1" />
+
+    <EditText
+        android:id="@+id/idquestionoption2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="Option 2" />
+
+
+    <EditText
+        android:id="@+id/idquestionoption3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="Option 3" />
+
+    <EditText
+        android:id="@+id/idCorrectAnswerNo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="Correct option number" />
+
+
+    <Button
+        android:id="@+id/idAddQuestionBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Add to Database"
+        android:textAllCaps="false" />
+
+</LinearLayout>

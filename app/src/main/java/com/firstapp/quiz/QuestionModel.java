@@ -1,15 +1,32 @@
 package com.firstapp.quiz;
 
 public class QuestionModel {
-    private String question,option1,option2,option3;
+    private String id,question,option1,option2,option3;
     private int correctAnsNo;
 
-    public QuestionModel(String question, String option1, String option2, String option3, int correctAnsNo) {
+    public QuestionModel(String id, String question, String option1, String option2, String option3, int correctAnsNo) {
+        this.id = id;
         this.question = question;
         this.option1 = option1;
         this.option2 = option2;
         this.option3 = option3;
         this.correctAnsNo = correctAnsNo;
+    }
+
+    public QuestionModel(String string, String string1, String string2, String string3, int int1) {
+
+    }
+
+    @Override
+    public String toString() {
+        return "QuestionModel{" +
+                "id='" + id + '\'' +
+                ", question='" + question + '\'' +
+                ", option1='" + option1 + '\'' +
+                ", option2='" + option2 + '\'' +
+                ", option3='" + option3 + '\'' +
+                ", correctAnsNo=" + correctAnsNo +
+                '}';
     }
 
     public String getQuestion() {
@@ -53,5 +70,11 @@ public class QuestionModel {
     }
 
 
+    public String getId() {
+        return id;
+    }
 
+    public void setId(String id) {
+        this.id = id;
+    }
 }

@@ -7,12 +7,10 @@ import android.content.res.ColorStateList;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.os.CountDownTimer;
-import android.provider.MediaStore;
 import android.view.View;
 import android.widget.Button;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
-import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -36,6 +34,9 @@ public class Easyquiz2 extends AppCompatActivity {
     ColorStateList dfRbColor;
     boolean answered;
     CountDownTimer  countDownTimer;
+    private ArrayList<QuestionModel> questionModelArrayList;
+    private DBHandler dbHandler;
+
 
 
 
@@ -46,6 +47,7 @@ public class Easyquiz2 extends AppCompatActivity {
         /* Creation of question array of lists */
         questionList= new ArrayList<>();
         /* Mapping the elements by id */
+        dbHandler = new DBHandler(Easyquiz2.this);
         tvQuestion=findViewById(R.id.textQuestion);
         tvScore=findViewById(R.id.textScore);
         tvQuestionNo=findViewById(R.id.textQuestionNo);
@@ -166,11 +168,20 @@ public class Easyquiz2 extends AppCompatActivity {
 
     private void addQuestions() {
 
-        questionList.add(new QuestionModel("Q 1 - How to kill an activity in Android?","Finish()","kill()", "None of above", 1));
-        questionList.add(new QuestionModel("Q 2 - How many broadcast receivers are available in android?", "sendIntent()", "sendBroadcast(),sendOrderBroadcast(),sendStickyBroadcast().", "onRecieve()", 2));
-        questionList.add(new QuestionModel("Q 3 -What is JNI in android?", "Java interface", "Image editable tool", "Java native interface.", 3));
-        questionList.add(new QuestionModel("Q 4 - What is ADB in android?", "Android Debug Bridge", "Development tool", "Image tool", 1));
-        questionList.add(new QuestionModel("Q 5- Is it possible activity without UI in android?", "No, it's not possible", "Yes,it's possible", "We can't say", 2));
+        questionModelArrayList=dbHandler.readQuestion();
 
+        for (int i=0;i<questionModelArrayList.size();i++)
+            System.out.println(questionModelArrayList.get(i));
+
+        System.out.println(questionModelArrayList.size());
+
+
+
+        questionList.add(new QuestionModel("1", "Q 1 - How to kill an activity in Android?","Finish()","kill()", "None of above", 1));
+        questionList.add(new QuestionModel("2", "Q 2 - How many broadcast receivers are available in android?", "sendIntent()", "sendBroadcast(),sendOrderBroadcast(),sendStickyBroadcast().", "onRecieve()", 2));
+        questionList.add(new QuestionModel("3", "Q 3 -What is JNI in android?", "Java interface", "Image editable tool", "Java native interface.", 3));
+        questionList.add(new QuestionModel("4", "Q 4 - What is ADB in android?", "Android Debug Bridge", "Development tool", "Image tool", 1));
+        questionList.add(new QuestionModel("5", "Q 5- Is it possible activity without UI in android?", "No, it's not possible", "Yes,it's possible", "We can't say", 2));
+        System.out.println(questionList.get(1));
     }
 }

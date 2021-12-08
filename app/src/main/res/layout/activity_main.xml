@@ -31,5 +31,13 @@
         android:layout_gravity="center_horizontal"
         android:layout_margin="16dp"
         android:text="@string/let_s_play" />
+    <Button
+        android:onClick="startadminspace"
+        android:id="@+id/id_button_admin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="16dp"
+        android:text="@string/adminspace" />
 
 </LinearLayout>
